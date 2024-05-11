@@ -1085,30 +1085,26 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/d16.desafio16dias.com.br\
 
 <!-- Star tBot Code -->
 
-
-	
 <script type="module">
   import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js'
 
-  Typebot.initBubble({
-    typebot: "akipfer-d16d",
-    previewMessage: {
-	message: "Oi",
-	autoShowDelay: 4000,
-	message: "Tenho uma pergunta pra você! Clique aqui para conversar comigo!",
-    	autoShowDelay: 7000,
-	avatarUrl:
-        "https://s3.typebot.io/public/users/dp6iej09et6jo9cu5ylcr94y/avatar?v=1715435005314",
-    },
-    theme: {
-      button: { backgroundColor: "#0042DA" },
-      chatWindow: { backgroundColor: "#fff" },
-    },
-  });
+const typebotInitScript = document.createElement("script");
+typebotInitScript.type = "module";
+typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js'
+
+Typebot.initBubble({
+  typebot: "akipfer-d16d",
+  previewMessage: {
+    message: "Oi! Toque aqui. Vamos Conversar",
+	autoShowDelay: 1000,
+    avatarUrl:
+      "https://s3.typebot.io/public/users/dp6iej09et6jo9cu5ylcr94y/avatar?v=1715435005314",
+  },
+  theme: { button: { backgroundColor: "rgb(30, 161, 0)" } },
+});
+`;
+document.body.append(typebotInitScript);
 </script>
-
-
-
 	
 <!-- End Bot Code -->
 
