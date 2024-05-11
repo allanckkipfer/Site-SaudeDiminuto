@@ -181,8 +181,23 @@ src="https://www.facebook.com/tr?id=1600763124032940&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-	
-	
+<!-- Star tBot Code -->
+const typebotInitScript = document.createElement("script");
+typebotInitScript.type = "module";
+typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js'
+
+Typebot.initBubble({
+  typebot: "akipfer-d16d",
+  previewMessage: {
+    message: "Tenho uma pergunta pra você! Clique aqui para conversar comigo!",
+    avatarUrl:
+      "https://s3.typebot.io/public/users/dp6iej09et6jo9cu5ylcr94y/avatar?v=1715435005314",
+  },
+  theme: { button: { backgroundColor: "#0042DA" } },
+});
+`;
+document.body.append(typebotInitScript);	
+<!-- End Bot Code -->
 </head>
 <body class="page-template page-template-elementor_canvas page page-id-2685 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-2498 elementor-page elementor-page-2685 e--ua-blink e--ua-chrome e--ua-webkit vsc-initialized" data-elementor-device-mode="desktop" cz-shortcut-listen="true">
 <!-- Google Tag Manager (noscript) -->
